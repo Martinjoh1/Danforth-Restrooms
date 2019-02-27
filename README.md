@@ -41,7 +41,7 @@ This is an excellent place for a CRC card or two.
 A sample (i.e., table) of the data would likely make this section clearest.
 
 ## Files
-*You'll complete this section as part of Milestone 1.*
+N/A yet 
 
 ### Project Files
 List every file in your repository, and briefly summarize each file's purpose in a sentence.

@@ -12,6 +12,8 @@
 
 **Slide**: https://docs.google.com/presentation/d/122vHtJbB_v0fb2Yy0XkrNg1R2AguvYdLtDqi52bAyNg/edit?usp=sharing
 
+**Critique sheet**: https://docs.google.com/document/d/1lNFKFpnQxEGQNzRpxQ5Byx-eO98_Qu6vBgQHg4Oob2g/edit?usp=sharing
+
 ---
 ## Purpose
 The building has only one restroom for women and one for men. The main purpose of this embedded system is to find out whethere or not 2 restrooms are enough. the system is going to record the time at which the doors of the restroom is open everyday. By processing the data we obtained, we can find out how often the restroom is used and whethere more people have tried to use the restroom at the same time. using this data, we can find out whether or not 2 restrrom is enough for the building. We came up with this idea when we found out that only two people can use the restroom at the same time and we thought what would happen if 3 or more people need to use the restroom at the same time.

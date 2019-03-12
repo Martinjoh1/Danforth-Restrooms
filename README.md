@@ -43,7 +43,7 @@ This is an excellent place for a CRC card or two.
 A sample (i.e., table) of the data would likely make this section clearest.
 
 ## Files
-N/A yet 
+ultra.py : example code for ultra sound ranger. We are still working on the code. There are some errors that we are trying to debug.
 
 ### Project Files
 List every file in your repository, and briefly summarize each file's purpose in a sentence.

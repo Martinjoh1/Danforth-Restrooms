@@ -49,7 +49,9 @@ N/A yet
 List every file in your repository, and briefly summarize each file's purpose in a sentence.
 
 ### Data Files
-Also list your data files here, which will be due during Milestone 3. 
+-Data File 0 - file of all the data we collected for today 
+-Data File 1 - file of better data range with text description
+-Data File 2 - filtered data that will actually be stored with out time and Date
 
 ## Instructions
 Explain how to use your product. 

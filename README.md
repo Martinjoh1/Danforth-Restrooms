@@ -40,7 +40,7 @@ This is an excellent place for a CRC card or two.
   - The data is saved constantly.
   - The data is collected every .8 of a second, in order to match speed people usually walk into and out of the restroom. 
 
-A sample (i.e., table) of the data would likely make this section clearest.
+![The connection of The Ultrasonci to the Rasberry Pi](images/DataTable.png)
 
 ## Files
 P02 final.txt- our final code that saves everything a correctly as possible 
@@ -61,8 +61,7 @@ In order to use the project you must open the Pi using the VNC Viewer, then you 
 - saves data in a text file, and not in an excell file 
 - time is not perfect off by 45 mins/sec, but only because the Pi is not set to the right time
 - only in millitary time
--
--
+
 ## References
 - http://www.alarm.com/blog/what-is-contact-sensor?fbclid=IwAR0wLXL1i_-8fZY5sFXzOtyUfWmcgCotdjB-KuNnH5uzMZ9eSBmtrKG9KT8 - Explains what a contact sensor is and does.
 - https://www.raspberrypi.org/forums/viewtopic.php?t=58267&fbclid=IwAR3LjHfLkEAg3tJspgcGtCCLHWUZ8sC3iMh90MkhtngXUU6XxfuG7DN1P3c -

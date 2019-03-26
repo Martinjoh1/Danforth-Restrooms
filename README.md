@@ -10,10 +10,10 @@
 
 ---
 ## Purpose
-The building has only one restroom for women and one for men. The main purpose of this embedded system is to find out whether or not 2 restrooms are enough. the system is going to record the time at which the doors of the restroom is open everyday. By processing the data we obtained, we can find out how often the restroom is used and whether more people have tried to use the restroom at the same time. using this data, we can find out whether or not 2 restroom is enough for the building. We came up with this idea when we found out that only two people can use the restroom at the same time and we thought what would happen if 3 or more people need to use the restroom at the same time.
+The building has only one restroom for women and one for men. The main purpose of this embedded system is to find out whether or not 2 restrooms are enough. the system is going to record the time at which the doors of the restroom is opened everyday. By processing the data we obtained, we can find out how often the restroom is used and whether more people have tried to use the restroom at the same time. using this data, we can find out whether or not 2 restroom is enough for the building. We came up with this idea when we found out that only two people can use the restroom at the same time and we thought what would happen if 3 or more people need to use the restroom at the same time.
 
 ## Initial Design Plan
-- put ultrasonic range in door so that it records the number of times the door opens, and closes, and when it opens and closes. 
+- put ultrasonic range near door so that it records the number of times the door opens, and closes, and when it opens and closes. 
 
 ### Hardware Design
 -  Ultrasonic range finder 
@@ -35,15 +35,15 @@ The building has only one restroom for women and one for men. The main purpose o
 This is an excellent place for a CRC card or two.
 
 ### Data Design
-- Describe your data that will be saved on your device. In particular:
-  - Describe the data itself (e.g., temperature), 
-  - The frequency of the data saves (e.g., constant, minute, hour), 
-  - The resolution of the data (e.g., calibrated, relative change)
+- We will be saving date and time. 
+  - The date is recorded through in the format 00/00/0000, and the Time is formated in military time containging milliseconds. 
+  - The data is saved constantly.
+  - The data is collected every .8 of a second, in order to match speed people usually walk into and out of the restroom. 
 
 A sample (i.e., table) of the data would likely make this section clearest.
 
 ## Files
-N/A yet 
+P02 final.txt- our final code that saves everything a correctly as possible 
 
 ### Project Files
 List every file in your repository, and briefly summarize each file's purpose in a sentence.
@@ -52,19 +52,17 @@ List every file in your repository, and briefly summarize each file's purpose in
 -Data File 0 - file of all the data we collected for today 
 -Data File 1 - file of better data range with text description
 -Data File 2 - filtered data that will actually be stored with out time and Date
+-DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
 
 ## Instructions
-Explain how to use your product. 
-This section should THOROUGHLY describe its usage (i.e., more than just "Push start").
+In order to use the project you must open the Pi using the VNC Viewer, then you need to find the file 
 
 ## Errors and Constraints
-*You'll complete this part at the end of the project.*
-
-Every program has bugs. Use this section to create a bullet list of
-all known errors and deficiencies that remain in your product. 
-Also, list any constraints that must exist for your product to work 
-(e.g., Only works in low light situations).
-
+- saves data in a text file, and not in an excell file 
+- time is not perfect off by 45 mins/sec, but only because the Pi is not set to the right time
+- only in millitary time
+-
+-
 ## References
 - http://www.alarm.com/blog/what-is-contact-sensor?fbclid=IwAR0wLXL1i_-8fZY5sFXzOtyUfWmcgCotdjB-KuNnH5uzMZ9eSBmtrKG9KT8 - Explains what a contact sensor is and does.
 - https://www.raspberrypi.org/forums/viewtopic.php?t=58267&fbclid=IwAR3LjHfLkEAg3tJspgcGtCCLHWUZ8sC3iMh90MkhtngXUU6XxfuG7DN1P3c -
@@ -75,14 +73,10 @@ sensor for Rasberry PI.
 
 
 ## Summary and Reflection
-*You'll complete this part at the end of the project.*
+  This project was a lot, but I enjoyed it. It was more focused on storing the data, and I think we did a pretty ok job. At first our data was formatted in a way that would allow us to analize it easily, but we eventually changed this. There is also a problem that arised where my Raspberry Pi completely broke, and all of our code was on there, but eventually we were able to save the code whic was stored on the SD card using another Raspberry Pi. This experience taught me the importance of saving the data constantly, and in more than one place. 
+   In this project we made the Ultrasoic record when someone walks into the restroom using a distance of below 89cm near the restroom door. It was challenging, but fun. It took some time to handle for Date and time, and to find code that worked with the ultrasonic on the Raspberry Pi. It also was challenging to get the file to write the information we needed in a format that would make the data easy to analyze. Eventually we were able to make code that did all of these things. 
+   I learned a lot from this experience. I learned how to use a Raspberry Pi, I learned about digital and analog data, I learned how the Ultrasonic Range Finder acutally works. Not everything was completed as well as I would have liked it to be, but I enjoyed the process of making it happen. I also enjoyed completing my project to this point. Next time I would spend more time on the code itself, specifically trying to find a better way to save the data. 
 
-Write 3 - 5 paragraphs on your reactions to the final project. 
-Your reflection should be thoughtful and reflective. 
-First, report on what you did. Then, reflect on those actions. 
-It's a look back at what you learned by doing this project, but good and bad. 
-You should be critical of shortcomings (yours, as well as the instructors/assignments) 
-as well as celebratory of what was achieved.
 
 ## Final Self-Evaluations
 *You'll complete this part at the end of the project. 

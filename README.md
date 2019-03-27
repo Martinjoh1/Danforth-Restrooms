@@ -17,7 +17,8 @@ The building has only one restroom for women and one for men. The main purpose o
 
 ### Hardware Design
 -  Ultrasonic range finder 
-![The connection of The Ultrasonci to the Rasberry Pi](P02 data.png)
+
+![The connection of The Ultrasonci to the Rasberry Pi](P02image.png)
 
 ### Software Design
 - List all of the classes and functions you'll be creating.

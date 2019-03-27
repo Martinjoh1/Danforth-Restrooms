@@ -28,8 +28,11 @@ The building has only one restroom for women and one for men. The main purpose o
     
  2. Function
      def __init__(self) :This is the constructor for the class. Variables are defined here and csv file is created here
+
      def __init__(self) : this is the function in which the distance that the ultrasonic waves have travelled is recorded for every 8 seconds
+
      def __init__(self) : this is the function which stores the data in the csv file if the distance teh ultra sonic waves travelled is less than 89cm
+
      def __init__(self) : This is the main function
 
 ### Data Design
@@ -53,8 +56,11 @@ P02image.png : the hardware design
 
 ### Data Files
 -Data File 0 - file of all the data we collected for today 
+
 -Data File 1 - file of better data range with text description
+
 -Data File 2 - filtered data that will actually be stored with out time and Date
+
 -DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
 
 ## Instructions

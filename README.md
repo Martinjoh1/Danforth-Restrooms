@@ -46,7 +46,6 @@ The building has only one restroom for women and one for men. The main purpose o
 
 ## Files
 indreswaranl.py : This is our final code which contains class and which can save the data in the csv file(Excel file)
-P02 final.txt- our final code that saves everything a correctly as possible 
 
 ### Project Files
 List every file in your repository, and briefly summarize each file's purpose in a sentence.

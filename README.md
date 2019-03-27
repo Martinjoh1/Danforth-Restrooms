@@ -13,7 +13,7 @@
 The building has only one restroom for women and one for men. The main purpose of this embedded system is to find out whether or not 2 restrooms are enough. the system is going to record the time at which the doors of the restroom is opened everyday. By processing the data we obtained, we can find out how often the restroom is used and whether more people have tried to use the restroom at the same time. using this data, we can find out whether or not 2 restroom is enough for the building. We came up with this idea when we found out that only two people can use the restroom at the same time and we thought what would happen if 3 or more people need to use the restroom at the same time.
 
 ## Initial Design Plan
-- put ultrasonic range near door so that it records the number of times the door opens, and closes, and when it opens and closes. 
+- put ultrasonic range near door so that it records the number of times the door opens, and closes, and record when(the tiem at which) it opens and closes. 
 
 ### Hardware Design
 -  Ultrasonic range finder 
@@ -26,13 +26,15 @@ The building has only one restroom for women and one for men. The main purpose o
 
 ### Software Design
 - List all of the classes and functions you'll be creating.
-  - Your program must follow good coding standards. 
-  Primarily, I mean your code should include meaningful functions 
-  and appropriate variables, and be formatted and commented well. 
-  - This is Python (not C), so *classes are expected* to be well-designed and used throughout.
-  - Sloppy code with no structure will be penalized. 
-
-This is an excellent place for a CRC card or two.
+  
+  1.Classes
+    Class ProjectTwo :We only created one class because our program only have two functions, so we did not have a necessasity to create many classes. 
+    
+ 2. Function
+     def __init__(self) :This is the constructor for the class. Variables are defined here and csv file is created here
+     def __init__(self) : this is the function in which the distance that the ultrasonic waves have travelled is recorded for every 8 seconds
+     def __init__(self) : this is the function which stores the data in the csv file if the distance teh ultra sonic waves travelled is less than 89cm
+     def __init__(self) : This is the main function
 
 ### Data Design
 - We will be saving date and time. 
@@ -43,6 +45,7 @@ This is an excellent place for a CRC card or two.
 ![The connection of The Ultrasonci to the Rasberry Pi](images/DataTable.png)
 
 ## Files
+indreswaranl.py : This is our final code which contains class and which can save the data in the csv file(Excel file)
 P02 final.txt- our final code that saves everything a correctly as possible 
 
 ### Project Files
@@ -55,7 +58,7 @@ List every file in your repository, and briefly summarize each file's purpose in
 -DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
 
 ## Instructions
-In order to use the project you must open the Pi using the VNC Viewer, then you need to find the file 
+In order to use the project you must open the Pi using the VNC Viewer, then you need to find the file. 
 
 ## Errors and Constraints
 - saves data in a text file, and not in an excell file 

@@ -28,8 +28,11 @@ The building has only one restroom for women and one for men. The main purpose o
     
  2. Function
      def __init__(self) :This is the constructor for the class. Variables are defined here and csv file is created here
+
      def __init__(self) : this is the function in which the distance that the ultrasonic waves have travelled is recorded for every 8 seconds
+
      def __init__(self) : this is the function which stores the data in the csv file if the distance teh ultra sonic waves travelled is less than 89cm
+
      def __init__(self) : This is the main function
 
 ### Data Design
@@ -44,12 +47,20 @@ The building has only one restroom for women and one for men. The main purpose o
 indreswaranl.py : This is our final code which contains class and which can save the data in the csv file(Excel file)
 
 ### Project Files
-List every file in your repository, and briefly summarize each file's purpose in a sentence.
+P02 data.csv : This is the data file which shows how data is currently stored in the project
+
+indreswaranl.py : This is our final code which contains class and can save the data in the csv file(Excel file) format.
+
+P02image.png : the hardware design
+
 
 ### Data Files
 -Data File 0 - file of all the data we collected for today 
+
 -Data File 1 - file of better data range with text description
+
 -Data File 2 - filtered data that will actually be stored with out time and Date
+
 -DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
 
 ## Instructions
@@ -75,11 +86,7 @@ sensor for Rasberry PI.
 
 
 ## Summary and Reflection
-  This project was a lot, but I enjoyed it. It was more focused on storing the data, and I think we did a pretty ok job. At first our data was formatted in a way that would allow us to analize it easily, but we eventually changed this. There is also a problem that arised where my Raspberry Pi completely broke, and all of our code was on there, but eventually we were able to save the code whic was stored on the SD card using another Raspberry Pi. This experience taught me the importance of saving the data constantly, and in more than one place. 
-   
-   In this project we made the Ultrasoic record when someone walks into the restroom using a distance of below 89cm near the restroom door. It was challenging, but fun. It took some time to handle for Date and time, and to find code that worked with the ultrasonic on the Raspberry Pi. It also was challenging to get the file to write the information we needed in a format that would make the data easy to analyze. Eventually we were able to make code that did all of these things. 
-   
-   I learned a lot from this experience. I learned how to use a Raspberry Pi, I learned about digital and analog data, I learned how the Ultrasonic Range Finder acutally works. Not everything was completed as well as I would have liked it to be, but I enjoyed the process of making it happen. I also enjoyed completing my project to this point. Next time I would spend more time on the code itself, specifically trying to find a better way to save the data. 
+
 
 
 ## Final Self-Evaluations

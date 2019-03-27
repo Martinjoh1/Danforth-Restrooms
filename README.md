@@ -17,6 +17,7 @@ The building has only one restroom for women and one for men. The main purpose o
 
 ### Hardware Design
 -  Ultrasonic range finder 
+
 ![The connection of The Ultrasonci to the Rasberry Pi](P02image.png)
 
 ### Software Design
@@ -52,12 +53,15 @@ List every file in your repository, and briefly summarize each file's purpose in
 -DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
 
 ## Instructions
-In order to use the project you must open the Pi using the VNC Viewer, then you need to find the file. 
+In order to use the project you must open the Pi using the VNC Viewer, then run the code and an excel file will be created and we can check the data stored in the excel file. 
+The program uses an ultrasonic sensor which continuously emit or send ultra sonic waves. when the waves hit an object, the echo is sent back and the time taken to hit the object is calculated and using the time difference(time taken to receive the echo back), the distance is calculated. In our project, we placed the pi and the sensors infront of the females restroom near the door in the Danforth Technology Building. There is a wall opposite to the sensor. Thus the sistance meausred by the sensor is nearly 97 cm. If a person enter the restroom then the ultra sonic wave will not reach the wall, but reach the person and send the echo back. We meausred the distance between the door and the sensor and considering the door in that restroom can not be opened by pusing in the farend, we decided that if the distance calculated by the sensor is less than 89cm, then there is a movement which is mostly due to the entry into the restroom or out from the restroom. 
+The sensor saves the data everytime the distance is less than 89 cm. In order to calculate the number of people who used or tried to use the restroom we will be dividing the total number of data stored in a day by 2 after removing the outliers when we analyze the data. This project can be used to determine how often the restroom has been used.
 
 ## Errors and Constraints
-- saves data in a text file, and not in an excell file 
-- time is not perfect off by 45 mins/sec, but only because the Pi is not set to the right time
-- only in millitary time
+We faced some challeneges and had somee errors in the data we collceted due to the challenges. We wanted to place the sensors right behind the door and inside the restroom so that the data we collect is more accurate and it does not record while the door is opened. This way we can filter the data using the distance between the door and the sensors and people who tried to come into the restroom as well. But we couldn't place the sensors insid ethe restroom for various reasons which include, insufficient space, unavailabilty of the power outlet. As a result we placed the sensors/pi infront of the women's restroom. The probelm we faced is that the room next to the restroom has a door which could open wide and would intrupt the ulstrsonic waves. This means that everytime the door is opened in such a way that it covers the restroom door, the data that was enetered is not useful. It is an error. 
+Another problem we are facing is that of someone stands infront of the sensor for long time, it record it as a multiple entry. Eventhough it is an error in storing the data, this can be resolved while analyzing the data. These data can be removed based on the time it corresponds to. Since the time recorded include milliseonds, we can easily eliinate those multiple entry. Due to teh structure of the restroom while one person enter the restroom, anothe rperson can not exit at the same time. Therefor this error can be elimintaed while anlayzing the data.
+Another defect that our code has is that the time of our pi is off by 1 minute. It shows an incorrect time. We could easily fix it but for now, we did not fix it so that data collection is not interupted.
+
 
 ## References
 - http://www.alarm.com/blog/what-is-contact-sensor?fbclid=IwAR0wLXL1i_-8fZY5sFXzOtyUfWmcgCotdjB-KuNnH5uzMZ9eSBmtrKG9KT8 - Explains what a contact sensor is and does.

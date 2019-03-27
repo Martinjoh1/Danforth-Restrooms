@@ -45,7 +45,9 @@ indreswaranl.py : This is our final code which contains class and which can save
 
 ### Project Files
 P02 data.csv : This is the data file which shows how data is currently stored in the project
+
 indreswaranl.py : This is our final code which contains class and can save the data in the csv file(Excel file) format.
+
 P02image.png : the hardware design
 
 

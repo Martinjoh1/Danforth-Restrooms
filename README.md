@@ -93,8 +93,7 @@ sensor for Rasberry PI.
   
    We learned how an  ultrasonic sensor work and how it can be utilized in our project. Understanding the physics behind the ultrasonic waves and how the distance is calculated was challenging. We initially faced  difficulty in recording the real time and storing the data we needed in the correct format. Storing the data was easier than we thought. But the challenging part was storing the data in a format which can be helpful for data analysis. We are happy that we were able to overcome the challenges and finish the project in the way that we expected. TAs for this class and other TA’s in the lab were very helpful especially when we had problem in debugging and changing the functions to class.
    
-   
-  	This project helped us to learn a lot of things. We learned new applications of raspberry pi, differences in analog and digital data, application and usage of ultrasonic sensors, and storing the data.  It also taught us that Raspberry Pi has to be handled very carefully. Overall this project was a great experience
+   This project helped us to learn a lot of things. We learned new applications of raspberry pi, differences in analog and digital data, application and usage of ultrasonic sensors, and storing the data.  It also taught us that Raspberry Pi has to be handled very carefully. Overall this project was a great experience
 
 
 

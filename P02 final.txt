@@ -1,0 +1,77 @@
+# Authors: Lakshiya Indreswaran and John Martin 
+#
+# Helper code is adapted from: "https://gist.github.com/eyllanesc/f8464b57e091777a5aef48fdd9ea9067"
+# by: Edwin Christian Yllanes Cucho 
+# GitHub: eyllanesc 
+#
+# Purpose: Uses ultrasonic distance measurer to measure a certain distance, and retuns time and date
+# if that distance is met. Will be used to count ammount of people entering, and exiting an area. 
+#
+
+import RPi.GPIO as GPIO
+import time
+from datetime import datetime #
+from datetime import date
+GPIO.setwarnings(False)
+TRIG = 18
+ECHO = 24
+GPIO.setmode(GPIO.BCM)
+print ("Distance Measurement In Progress")
+GPIO.setup(TRIG, GPIO.OUT)
+GPIO.setup(ECHO, GPIO.IN)
+today = date.today()
+t = datetime.time(datetime.now())
+x = str(t)# makes string fo time
+y = str(today) # makes string of date 
+
+    
+def find_distance():
+	# function that makes the Ultrasonic record the distance 
+    isRunning = True
+    GPIO.output(TRIG, False)
+    time.sleep(.8)
+    GPIO.output(TRIG, True)
+    time.sleep(0.00001)
+    GPIO.output(TRIG, False)
+    while GPIO.input(ECHO) == 0:
+        pulse_start = time.time() #measuring the time
+    while GPIO.input(ECHO) == 1:
+        pulse_end = time.time()
+    pulse_duration = pulse_end - pulse_start #time taken for the echo to reach
+    distance = pulse_duration * 17150 #changing the time to distance
+    distance = round(distance, 2) #rounding of the decimal to two decimal
+    return distance 
+    
+def write_file(distance): 
+        #for creating a file and storing data if distance is below a certain number 
+    if distance < 89:
+            #for our project, we want to store the data only when the distance meaured by the
+            #sensor is less than 89 cm so that we know people entered the restroom. for testing purpose
+           
+     #this is for filtering our data
+        #newdistance = str(distance) #change the number into string so that it can store
+        myfile = open("P2DATALOG.txt", "a+") # create a file
+        #myfile.write ("Time:" + str(datetime.now()))
+        myfile.write ("{:>5}\t{:>5}".format('time',"") + ("{:>5}\t{:>5}".format("",'date'))) # formats a collumn for date, and a column for time.
+        myfile.write("\n")
+        myfile.write ("{:>5}\t{:>5}".format(x,"") + ("{:>5}\t{:>5}".format("",y))) # adds the Date, and time into the column 
+        myfile.write("\n")
+        #myfile.write("Distance:"+ newdistance +"cm") #store data
+        myfile.write("\n")
+        myfile.close()
+    #if distance < 5: #this is for testing. we will be editing it in future so that every time teh meaurement is less than particluar value, it stores the data.
+        #print("testing")
+
+def main():
+    
+    while True:
+        dist = find_distance()
+        write_file(dist)
+        
+        
+    GPIO.cleanup()
+
+main()
+
+
+

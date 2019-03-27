@@ -53,6 +53,8 @@ indreswaranl.py : This is our final code which contains class and can save the d
 
 P02image.png : the hardware design
 
+DataFromThreeDays - the data that we stored for 3 days for milestone 3
+
 
 ### Data Files
 -Data File 0 - file of all the data we collected for today 
@@ -61,7 +63,7 @@ P02image.png : the hardware design
 
 -Data File 2 - filtered data that will actually be stored with out time and Date
 
--DataFromThreeDays- contains data of Date  and time for multiple days is a little unordered 
+-DataFromThreeDays- contains data of Date  and time for multiple days. The data is not stored in correct format(columns) 
 
 ## Instructions
 In order to use the project you must open the Pi using the VNC Viewer, then run the code and an excel file will be created and we can check the data stored in the excel file. The program uses an ultrasonic sensor which continuously emit or send ultra sonic waves. when the waves hit an object, the echo is sent back and the time taken to hit the object is calculated and using the time difference(time taken to receive the echo back), the distance is calculated. 
@@ -86,6 +88,10 @@ sensor for Rasberry PI.
 
 
 ## Summary and Reflection
+  This project was difficult and fun at the same time. We learned a lot from this project. The fact that the data we are storing can be utilized for a good purpose is an interesting part of the project. We think that we have done a good job in storing the data. We have faced few challenges while doing this project and we have learned lessons from it. The important one is that one of the pi that we were using stopped working in the middle of the project and we have not made a copy of the that code. We thought that we lost the codes we worked on but fortunately we were able to get the code back since the problem was with the pi and not with the SD card. This experience taught us that it is always good to make a copy of our work in another place or it is always good to clone our code to github directly from raspberry pi so that we will not be losing the code.
+   We learned how an  ultrasonic sensor work and how it can be utilized in our project. Understanding the physics behind the ultrasonic waves and how the distance is calculated was challenging. We initially faced  difficulty in recording the real time and storing the data we needed in the correct format. Storing the data was easier than we thought. But the challenging part was storing the data in a format which can be helpful for data analysis. We are happy that we were able to overcome the challenges and finish the project in the way that we expected. TAs for this class and other TA’s in the lab were very helpful especially when we had problem in debugging and changing the functions to class.
+  	This project helped us to learn a lot of things. We learned new applications of raspberry pi, differences in analog and digital data, application and usage of ultrasonic sensors, and storing the data.  It also taught us that Raspberry Pi has to be handled very carefully. Overall this project was a great experience
+
 
 
 
@@ -94,33 +100,29 @@ sensor for Rasberry PI.
 
 ### Ideation, Brainstorming, Design:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 Lakshiya Indreswaran: 5
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 John Martin: 5
 
 ### Code creation: 
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 Lakshiya Indreswaran: 5
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 John Martin: 5
 
 ### Documentation creation:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 Lakshiya Indreswaran: 5
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 John Martin: 5
 
 ### Teamwork & Participation:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 Lakshiya Indreswaran: 5
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 John Martin: 5
 
 
 ---
-**A Note from Scott to You**
 
-While I expect this project to be challenging, one
-thing to keep in mind is HAVE FUN with it! Create a product that
-expresses your personal interests. Break up the writing so it’s not so burdensome.
-We will have a live demo sessions at the end of the project to celebrate your accomplishments.
+
